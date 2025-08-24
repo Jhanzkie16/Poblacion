@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourism — Barangay Poblacion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tourist attractions, events and visitor information for Barangay Poblacion, Quirino, Ilocos Sur." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+      /* small additions to help barangay branding when placeholders used */
+      .brand-small { line-height: 0.9; }
+      .badge-local { background:#0f766e; color:#fff; padding:4px 8px; border-radius:999px; font-weight:700; font-size:12px; }
+      .kagawad-photo { width:72px; height:72px; object-fit:cover; border-radius:12px; }
+      .gov-list a { text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px; }
+      .gov-list img { width:48px; height:48px; object-fit:cover; border-radius:8px; }
+      .tour-hero { height:420px; object-fit:cover; width:100%; }
+      .attraction-card img { height:200px; object-fit:cover; }
+      .gallery img { height:110px; object-fit:cover; }
+      @media (max-width:767px){ .top-info .overflow-hidden{ width: 280px !important; } }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start (same layout as index) -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="container-fluid topbar bg-dark d-none d-lg-block">
+            <div class="container px-0">
+                <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                    <div class="top-info flex-grow-0 d-flex align-items-center">
+                        <span class="rounded-circle btn-sm-square bg-primary me-2">
+                            <i class="fas fa-bolt text-white"></i>
+                        </span>
+                        <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                            <p class="mb-0 text-white fs-6 fw-normal">POBLACION WEBSITE</p>
+                        </div>
+                        <div class="overflow-hidden" style="width: 640px;">
+                            <div id="note" class="ps-2 d-flex align-items-center">
+                                <img src="img/16.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2"
+                                    style="width: 30px; height: 30px;" alt="Clean-up">
+                                <a href="#" class="text-white mb-0 link-hover">
+                                    <p class="text-white mb-0">River Clean-up: Sitio Dagman collected 120 kg of waste (Aug 5, 2025).</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-link flex-lg-wrap d-flex align-items-center gap-3">
+                        <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2">
+                            <span class="text-body">Aug 24, 2025</span>
+                        </i>
+                        <div class="d-flex icon align-items-center">
+                            <p class="mb-0 text-white me-2">Follow Us:</p>
+                            <a href="https://www.facebook.com/groups/180306753078535" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram text-body link-hover"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-youtube text-body link-hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand mt-3">
+                        <p class="text-primary display-6 mb-2 brand-small" style="line-height: 0;">Barangay Legleg</p>
+                        <small class="text-body fw-normal" style="letter-spacing: 6px;">Poblacion · Quirino · Ilocos Sur</small>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="tourism.html" class="nav-item nav-link active">Tourism</a>
+                            <a href="news.html" class="nav-item nav-link">News</a>
+                            <a href="governance.html" class="nav-item nav-link">Governance</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="#" class="dropdown-item">Barangay Clearance</a>
+                                    <a href="#" class="dropdown-item">Indigency Certification</a>
+                                    <a href="#" class="dropdown-item">Disaster Response</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
+                            <div class="d-flex">
+                                <img src="img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                <div class="d-flex align-items-center">
+                                    <strong class="fs-4 text-secondary">29°C</strong>
+                                    <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                        <span class="text-body">QUIRINO, IL</span>
+                                        <small>Sun. 24 Aug 2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Search Barangay Notices</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="Search attractions, events, visitor info..." aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Hero / Intro -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="position-relative">
+            <img src="img/10.jpg" alt="Poblacion Falls" class="tour-hero w-100 rounded">
+            <div class="position-absolute" style="bottom: 20px; left: 40px;">
+                <span class="badge-local">Explore</span>
+                <h1 class="text-white display-5 mt-2">Discover Barangay Poblacion</h1>
+                <p class="text-white">Waterfalls, rice terraces, scenic viewpoints and community experiences — plans and visitor info for responsible travel.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attractions Grid -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12">
+                <h2 class="mb-4">Top Attractions</h2>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/2.jpg" class="card-img-top" alt="Poblacion Falls">
+                    <div class="card-body">
+                        <h5 class="card-title">Poblacion Falls</h5>
+                        <p class="card-text small text-muted">A multi-tiered waterfall with accessible viewing platforms and picnic areas. Best visited from November to April.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-map-marker-alt me-1"></i> Sitio Dagman</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/3.jpg" class="card-img-top" alt="Rice Terraces">
+                    <div class="card-body">
+                        <h5 class="card-title">Rice Terrace Viewpoints</h5>
+                        <p class="card-text small text-muted">Scenic panoramic viewpoints ideal for sunrise photography and short treks through the terraces.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-walking me-1"></i> Easy hike</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/4.jpg" class="card-img-top" alt="Viewpoint">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunset Viewpoint — Barangay Ridge</h5>
+                        <p class="card-text small text-muted">Short drive from the barangay center; excellent viewpoint for sunset and drone footage (where permitted).</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-camera me-1"></i> Photo spot</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/5.jpg" class="card-img-top" alt="Farm Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Farm Tours</h5>
+                        <p class="card-text small text-muted">Join local farmers for a guided tour and farm-to-table tastings. Advance booking recommended.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-tractor me-1"></i> Family friendly</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Book a tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/8.jpg" class="card-img-top" alt="Cultural">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultural Walk & Artisan Market</h5>
+                        <p class="card-text small text-muted">Meet local artisans, crafts and seasonal markets showcasing weaving, pottery and local delicacies.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-palette me-1"></i> Local crafts</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Visit market</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card attraction-card border-0 shadow-sm">
+                    <img src="img/15.jpg" class="card-img-top" alt="River Activities">
+                    <div class="card-body">
+                        <h5 class="card-title">River Walk & Picnic Spots</h5>
+                        <p class="card-text small text-muted">Easy riverside trails with family-friendly picnic areas and natural pools for wading.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body"><i class="fas fa-water me-1"></i> Swimming spots</small>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Visitor Information & Map -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <h3>Visitor Information</h3>
+                <p class="text-muted">Plan your visit: responsible travel tips, safety, and local guidelines for visitors to Barangay Poblacion.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Getting there:</strong> From Vigan, take the provincial bus to Quirino; jeepneys and habal-habal connect to Legleg. Travel time: ~1–1.5 hours depending on connections.</li>
+                    <li class="mb-2"><strong>Permits & fees:</strong> Most attractions are free; special guided activities or events may have small fees. Check with the barangay office for group visits.</li>
+                    <li class="mb-2"><strong>When to go:</strong> Dry season (Nov—Apr) is recommended for hikes and photography. Expect occasional afternoon rains in the wet season.</li>
+                    <li class="mb-2"><strong>Stay & Eat:</strong> Basic homestays and guesthouses in Legleg; support local eateries for authentic meals.</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Contact Tourism Officer</a>
+            </div>
+            <div class="col-lg-6">
+                <h3>Map & Directions</h3>
+                <!-- Placeholder map iframe: replace coordinates with official barangay location -->
+                <div class="ratio ratio-16x9 rounded overflow-hidden border">
+                    <iframe src="https://www.google.com/maps?q=Quirino+Ilocos+Sur&output=embed" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <small class="text-muted d-block mt-2">Map is a quick reference. For precise directions use your maps app or contact the barangay office.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events & Packages -->
+    <div class="container-fluid py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <h3 class="mb-3">Upcoming Events & Visitor Programs</h3>
+                    <div class="list-group mb-3">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Poblacion Cultural Night</h5>
+                                <small>Sep 25, 2025</small>
+                            </div>
+                            <p class="mb-1 small text-muted">An evening of music, dance and local food. Open to visitors — registration encouraged.</p>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Guided Rice Terrace Trek</h5>
+                                <small>Oct 10, 2025</small>
+                            </div>
+                            <p class="mb-1 small text-muted">A half-day guided trek with local guides. Wear good shoes and bring water.</p>
+                        </a>
+                    </div>
+
+                    <h5 class="mb-3">Suggested Day Trips</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <img src="img/14.jpg" class="card-img-top" alt="Day Trip">
+                                <div class="card-body">
+                                    <h6 class="card-title">Falls + River Picnic</h6>
+                                    <p class="small text-muted mb-0">Morning at the falls, lunch at a riverside picnic area and afternoon market visit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <img src="img/15.jpg" class="card-img-top" alt="Day Trip 2">
+                                <div class="card-body">
+                                    <h6 class="card-title">Sunrise at the Rice Terraces</h6>
+                                    <p class="small text-muted mb-0">Early departure for sunrise views and a light trek through terraces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="p-3 rounded border bg-light">
+                        <h5>Visitor Tips</h5>
+                        <ul class="small text-muted">
+                            <li>Bring biodegradable trash bags and take your waste home.</li>
+                            <li>Respect private and farming areas — ask before entering.</li>
+                            <li>Support local businesses and homestays.</li>
+                            <li>Local guides make treks safer and help support communities.</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-2">Volunteer & Community Tours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer (reuse) -->
+    <div class="container-fluid bg-dark footer py-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#" class="d-flex flex-column flex-wrap">
+                            <p class="text-white mb-0 display-6">Barangay Legleg</p>
+                            <small class="text-light" style="letter-spacing: 6px; line-height: 0;">Poblacion · Quirino</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="d-flex position-relative rounded-pill overflow-hidden">
+                            <input class="form-control border-0 w-100 py-3 rounded-pill" type="email" placeholder="Your email for barangay updates">
+                            <button type="submit" class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute" style="top: 0; right: 0;">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-1">
+                        <h4 class="mb-4 text-white">Get In Touch</h4>
+                        <p class="text-secondary line-h">Address: <span class="text-white">Barangay Hall, Poblacion, Quirino, Ilocos Sur</span></p>
+                        <p class="text-secondary line-h">Email: <span class="text-white">PoblacionLegleg@gmail.com</span></p>
+                        <p class="text-secondary line-h">Phone: <span class="text-white">(02) 812-3456</span></p>
+                        <div class="d-flex line-h">
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-instagram text-dark"></i></a>
+                            <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-2">
+                        <div class="d-flex flex-column mb-4">
+                            <h4 class="mb-4 text-white">Recent Notices</h4>
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle border border-2 border-primary overflow-hidden" style="width:56px;height:56px;">
+                                        <img src="img/18.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column ps-4">
+                                        <p class="text-uppercase text-white mb-3">Health</p>
+                                        <a href="#" class="h6 text-white">Barangay Health Fair — Aug 30</a>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Aug 30, 2025</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle border border-2 border-primary overflow-hidden" style="width:56px;height:56px;">
+                                        <img src="img/6.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column ps-4">
+                                        <p class="text-uppercase text-white mb-3">Community</p>
+                                        <a href="#" class="h6 text-white">River Clean-up Report</a>
+                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Aug 5, 2025</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="d-flex flex-column text-start footer-item-3">
+                        <h4 class="mb-4 text-white">Quick Links</h4>
+                        <a class="btn-link text-white" href="governance.html"><i class="fas fa-angle-right text-white me-2"></i> Governance</a>
+                        <a class="btn-link text-white" href="services.html"><i class="fas fa-angle-right text-white me-2"></i> Services</a>
+                        <a class="btn-link text-white" href="tourism.html"><i class="fas fa-angle-right text-white me-2"></i> Tourism</a>
+                        <a class="btn-link text-white" href="programs.html"><i class="fas fa-angle-right text-white me-2"></i> Programs</a>
+                        <a class="btn-link text-white" href="contact.html"><i class="fas fa-angle-right text-white me-2"></i> Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="footer-item-4">
+                        <h4 class="mb-4 text-white">Our Gallery</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/8.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                           </div>
+                           <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                           </div>
+                            <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light">© Barangay Poblacion — All rights reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    Designed By Jannjann Lagadan — ES Web System Corporation
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      // small JS: update spinner hide on load
+      window.addEventListener('load', function(){ const s = document.getElementById('spinner'); if(s){ s.classList.remove('show'); s.style.display='none'; } });
+
+      // initialize simple carousels if owl is included
+      $(document).ready(function(){
+        if ($.fn.owlCarousel) {
+          $('.latest-news-carousel, .whats-carousel, .whats-item, .latest-news-item').owlCarousel({
+            loop:true, margin:20, nav:true, dots:false, responsive:{0:{items:1},600:{items:2},1000:{items:3}}
+          });
+        }
+      });
+    </script>
+</body>
+
+</html>
